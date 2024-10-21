@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #9a73fe;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+}
+
+/* Main App Container */
+.App {
+  background: linear-gradient(to bottom right,#9a73fe, #6e28c4);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+/* App Title */
+.app-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.city-search {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #1e8cd1;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Loader Styles */
+.error-message {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+/* Current Weather Display */
+h3 {
+  margin: 10px 0;
+  color: #000000;
+}
+
+.forecast img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Forecast Section */
+.forecast {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forecast h3 {
+  margin-bottom: 10px;
+}
+
+.forecast ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.forecast li {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  background-color: #e1e7f1;
+  border-radius: 5px;
+  padding: 10px;
+  width: 15%;
+  transition: transform 0.3s ease;
+}
+
+.forecast li:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+  .App {
+    width: 90%;
+  }
+
+  .city-search {
+    width: 60%;
+  }
+}
